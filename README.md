@@ -5,5 +5,5 @@ Proyecto para la asignatura de Implementación e Implantación de Sistemas Softw
 
 Integrantes del grupo:
   - Felipe Bedoya Castaño
-  - Manuel Bonat Lucía
+  - Manuel Bonat Lucia
   - Salvador Carmona Román
