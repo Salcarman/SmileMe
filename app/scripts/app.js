@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name yeomanProjectsApp
+ * @name smileMeApp
  * @description
- * # yeomanProjectsApp
+ * # smileMeApp
  *
  * Main module of the application.
  */
 angular
-  .module('yeomanProjectsApp', [
+  .module('smileMeApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -23,15 +23,15 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'aboutCtrl'
       })
 	.when('/consulta', {
         templateUrl: 'views/formulario.html',
-        controller: 'FormCtrl'
+        controller: 'formCtrl'
       })
       .otherwise({
         redirectTo: '/'
