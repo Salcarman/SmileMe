@@ -3,26 +3,27 @@
         <h4 class="text-center">Contacto</h4>
     </div>
     <div class="panel-body">
-        <form class="col-md-12" name="addingForm">
+        <form class="col-md-12" name="addingForm" action="#" method="post">
             <div class="well">
                 <div class="form-group">
-                    <label>Nombre:</label>
-                    <input type="text" class="form-control">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" ng-model="nombre" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label>Email:</label>
-                    <input type="email" class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" ng-model="email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label>Tel&eacute;fono:</label>
-                    <input type="text" class="form-control">
+                    <label for="telefono">Tel&eacute;fono:</label>
+                    <input type="text" id="telefono" ng-model="telefono" class="form-control">
                 </div>
                 <div>
-                    <p>Texto:</p>
-                    <textarea name="consulta" rows="10" cols="40">Escriba aqu&iacute; su consulta</textarea>
+                    <label for="consulta">Texto:</label>
+                    <textarea class="form-control" ng-model="texto" id="consulta" rows="10" cols="40">Escriba aqu&iacute; su consulta</textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lock">Enviar</button>
+                <button type="submit" ng-click="test()" class="btn btn-primary btn-lock">Enviar</button>
             </div>
         </form>
+	{{nombre}}
     </div>
 </div>

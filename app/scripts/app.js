@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('smileMeApp', [
+var smileMeApp = angular.module('smileMeApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -21,7 +20,7 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('', {
+      .when('/', {
         templateUrl: 'views/main.html',
         controller: 'mainCtrl'
       })
