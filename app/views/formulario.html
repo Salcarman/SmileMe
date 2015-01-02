@@ -12,23 +12,24 @@
 					<form class="col-md-12" name="addingForm" ng-submit="post()">
 							<div class="well">
 									<div class="form-group">
-											<label for="nombre">Nombre:</label>
+											*<label for="nombre">Nombre:</label>
 											<input type="text" id="nombre" ng-model="nombre" class="form-control" required>
 											
 									</div>
 									<div class="form-group">
-											<label for="email">Email:</label>
-											<input type="email" id="email" ng-model="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+											*<label for="email">Email</label>
+											<input type="email" id="email" ng-model="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 									</div>
 									<div class="form-group">
 											<label for="telefono">Tel&eacute;fono:</label>
 											<input type="text" id="telefono" ng-model="telefono" class="form-control" pattern="[0-9]{9}">
 									</div>
 									<div>
-											<label for="consulta">Texto:</label>
-											<textarea class="form-control" ng-model="texto" id="consulta" rows="10" cols="40" required>Escriba aqu&iacute; su consulta</textarea>
+											*<label for="consulta">Ind&iacute;quenos en qu&eacute; podemos ayudarle:</label>
+											<textarea placeholder="Escriba aqu&iacute; su consulta" class="form-control" ng-model="texto" id="consulta" rows="10" cols="40"  required> </textarea>
 									</div>
-									<button type="submit" class="btn btn-primary btn-lock">Enviar</button>
+									<span class="help-block">Los campos con * son obligatorios.</span>
+									<button type="submit" class="btn btn-primary btn-lock" ng-disabled="addingForm.$invalid">Enviar</button>
 							</div>
 					</form>
         </div>
