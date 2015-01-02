@@ -3,27 +3,34 @@
         <h4 class="text-center">Contacto</h4>
     </div>
     <div class="panel-body">
-        <form class="col-md-12" name="addingForm" action="#" method="post">
-            <div class="well">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" ng-model="nombre" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" ng-model="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Tel&eacute;fono:</label>
-                    <input type="text" id="telefono" ng-model="telefono" class="form-control">
-                </div>
-                <div>
-                    <label for="consulta">Texto:</label>
-                    <textarea class="form-control" ng-model="texto" id="consulta" rows="10" cols="40">Escriba aqu&iacute; su consulta</textarea>
-                </div>
-                <button type="submit" ng-click="test()" class="btn btn-primary btn-lock">Enviar</button>
-            </div>
-        </form>
-	{{nombre}}
+				<div ng-show="postsent">
+					<div class="panel panel-default">
+						<div class="panel-body text-center">Mensaje enviado correctamente.</div>
+					</div>
+				</div>
+				<div ng-show="!postsent">
+					<form class="col-md-12" name="addingForm" ng-submit="post()">
+							<div class="well">
+									<div class="form-group">
+											<label for="nombre">Nombre:</label>
+											<input type="text" id="nombre" ng-model="nombre" class="form-control" required>
+											
+									</div>
+									<div class="form-group">
+											<label for="email">Email:</label>
+											<input type="email" id="email" ng-model="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+									</div>
+									<div class="form-group">
+											<label for="telefono">Tel&eacute;fono:</label>
+											<input type="text" id="telefono" ng-model="telefono" class="form-control" pattern="[0-9]{9}">
+									</div>
+									<div>
+											<label for="consulta">Texto:</label>
+											<textarea class="form-control" ng-model="texto" id="consulta" rows="10" cols="40" required>Escriba aqu&iacute; su consulta</textarea>
+									</div>
+									<button type="submit" class="btn btn-primary btn-lock">Enviar</button>
+							</div>
+					</form>
+        </div>
     </div>
 </div>

@@ -7,26 +7,27 @@
  * # formCtrl
  * Controller of the smileMeApp
  */
-angular.module('smileMeApp', ['ngResource'])
-	.factory("Post", function($resource){
-		var post = $resource('https://api.mongolab.com/api/1/databases/smileme/collections/smileme_contactform/', {
+smileMeApp.factory("Post", function($resource){
+		var post = $resource('https://api.mongolab.com/api/1/databases/smileme/collections/smileme_contactform', {
 						apiKey: 'Sqyp3__btaqcey97X5s9RRQmTH-2atf2',
 						id: 'wylly'
 						});
 		return post;
 	})
-	.controller('formCtrl', function ($scope)
+	.controller('formCtrl', function ($scope, Post)
 	{
-		$scope.add = function()
+		$scope.postsent = false;
+		$scope.post = function()
 		{
-			alert($scope.email);
-			var post = new Post()
+			$scope.postsent = true;
+			var post = new Post(
 			{
-				nombre: ''+$scope.nombre,
-				email: ''+$scope.email,
-				telefono: ''+$scope.telefono,
-				texto: ''+$scope.texto
-			}
+				nombre: ""+$scope.nombre+"",
+				email: ""+$scope.email+"",
+				telefono: ""+$scope.telefono+"",
+				texto: ""+$scope.texto+""
+			});
+			
 			post.$save();
 		}
   });
