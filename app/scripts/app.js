@@ -32,6 +32,10 @@ var smileMeApp = angular.module('smileMeApp', [
         templateUrl: 'views/formulario.html',
         controller: 'formCtrl'
       })
+	.when('/galeria', {
+        templateUrl: 'views/galeria.html',
+        controller: 'galleryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
