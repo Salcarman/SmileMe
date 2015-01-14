@@ -20,23 +20,23 @@ var smileMeApp = angular.module('smileMeApp', [
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'mainCtrl'
-      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'aboutCtrl'
       })
-	.when('/consulta', {
-        templateUrl: 'views/formulario.html',
+	.when('/contact', {
+        templateUrl: 'views/contact.html',
         controller: 'formCtrl'
       })
-	.when('/galeria', {
-        templateUrl: 'views/galeria.html',
+	.when('/gallery', {
+        templateUrl: 'views/gallery.html',
         controller: 'galleryCtrl'
       })
+	.when('/services', {
+        templateUrl: 'views/services.html',
+        controller: 'servicesCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/index.html'
       });
   });

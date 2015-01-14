@@ -27,6 +27,21 @@ module.exports = function (grunt) {
     // Project settings
     yeoman: appConfig,
 
+    // Less
+    less: {
+        development: {
+            options: {
+                compress: true,
+                yuicompress: true,
+                optimization: 2
+            },
+            files: {
+                // target.css file: source.less file
+                "app/styles/prueba.css": "app/styles/less/prueba.less"
+            }
+        }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -44,9 +59,17 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
+      //styles: {
+      //  files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+      //  tasks: ['newer:copy:styles', 'autoprefixer']
+      //},
       styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        files: ['<%= yeoman.app %>/styles/{,*/}*.css', '<%= yeoman.app %>/styles/less/{,*/}*.less'],
+        tasks: ['newer:copy:styles', 'autoprefixer', 'less'],
+        options: {
+          livereload: true,
+          spawn: false
+        }
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -354,6 +377,9 @@ module.exports = function (grunt) {
     }
   });
 
+
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
