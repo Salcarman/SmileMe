@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name smileMeApp.controller:aboutCtrl
+ * @name smileMeApp.controller:formCtrl
  * @description
  * # formCtrl
  * Controller of the smileMeApp
