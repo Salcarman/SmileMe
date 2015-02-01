@@ -32,8 +32,16 @@ var smileMeApp = angular.module('smileMeApp', [
         templateUrl: 'views/gallery.html',
         controller: 'galleryCtrl'
       })
-	.when('/services', {
-        templateUrl: 'views/services.html',
+    .when('/celebrations', {
+        templateUrl: 'views/celebrations.html',
+        controller: 'servicesCtrl'
+      })
+    .when('/renting', {
+        templateUrl: 'views/renting.html',
+        controller: 'servicesCtrl'
+      })
+    .when('/excursion', {
+        templateUrl: 'views/excursion.html',
         controller: 'servicesCtrl'
       })
       .otherwise({
