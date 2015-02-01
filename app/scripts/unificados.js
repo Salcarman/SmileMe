@@ -82,7 +82,7 @@ smileMeApp.factory("Post", function($resource){
 				telefono: ""+$scope.telefono+"",
 				texto: ""+$scope.texto+""
 			});
-
+			
 			post.$save();
 		}
   });
