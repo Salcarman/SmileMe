@@ -27,9 +27,10 @@ module.exports = function (grunt) {
 	// Project settings
 	yeoman: appConfig,
 
-	// Less
+	// Less Bootstrap
 	less: {
-		development: {
+		//development
+		bootstrap: {
 			options: {
 				compress: true,
 				yuicompress: true,
@@ -42,12 +43,21 @@ module.exports = function (grunt) {
 			},
 			files: {
 				// target.css file: source.less file
-				//"<%= yeoman.app %>/styles/prueba.css": "<%= yeoman.app %>/styles/less/unificados.less"
-				'<%= yeoman.app %>/styles/bootstrap.css': './bower_components/bootstrap/less/bootstrap.less'
+				'<%= yeoman.app %>/styles/css/bootstrap.css': './bower_components/bootstrap/less/bootstrap.less'
+			}
+		},
+		propio: {
+			options: {
+				compress: true,
+				yuicompress: true,
+				optimization: 2
+			},
+			files: {
+				// target.css file: source.less file
+				'<%= yeoman.app %>/styles/css/aStyle.css': '<%= yeoman.app %>/styles/less/aStyle.less'
 			}
 		}
 	},
-
  /*
 	  compileCore: {
 		options: {
@@ -95,7 +105,16 @@ module.exports = function (grunt) {
 	  //},
 	  stylesless: {
 		files: ['./bower_components/bootstrap/less/{,*/}*.less'],
-		tasks: ['newer:copy:styles', 'autoprefixer', 'less','clean:server'],
+		tasks: ['newer:copy:styles', 'autoprefixer', 'less:bootstrap','clean:server'],
+		options: {
+		  livereload: true,
+		  spawn: false,
+		  nospaces: true
+		}
+	  },
+	  stylespropio: {
+		files: ['<%= yeoman.app %>/styles/less/{,*/}*.less'],
+		tasks: ['newer:copy:styles', 'autoprefixer', 'less:propio', 'concat','clean:server'],
 		options: {
 		  livereload: true,
 		  spawn: false,
@@ -103,7 +122,7 @@ module.exports = function (grunt) {
 		}
 	  },
 	  styles: {
-		files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+		files: ['<%= yeoman.app %>/styles/css/{,*/}*.css'],
 		tasks: ['newer:copy:styles', 'autoprefixer','clean:server'],
 		options: {
 		  livereload: true,
@@ -279,9 +298,9 @@ module.exports = function (grunt) {
 	  target: {
 		files: [{
 			expand: true,
-			cwd: '<%= yeoman.app %>/styles',
+			cwd: '<%= yeoman.app %>/styles/css',
 			src:['*.css', '!*.min.css'],
-			dest: '<%= yeoman.app %>/styles',
+			dest: '<%= yeoman.app %>/styles/min',
 			ext: '.min.css'
 	   //   'output.css': [
 //'<%= yeoman.app %>/styles/{,*/}*.css'
@@ -310,7 +329,7 @@ module.exports = function (grunt) {
 			dest: '<%= yeoman.app %>/scripts/unificados.js'
 		},
 		distcss: {
-			src: ['<%= yeoman.app %>/styles/*.css'],
+			src: ['<%= yeoman.app %>/styles/css/*.css'],
 			dest: '<%= yeoman.app %>/styles/unificados.css'
 		}
 	},
@@ -320,7 +339,7 @@ module.exports = function (grunt) {
 		files: [{
 		  expand: true,
 		  cwd: '<%= yeoman.app %>/images',
-		  src: '{,*/}*.{png,jpg,jpeg,gif}',
+		  src: '**/*.{png,jpg,jpeg,gif}',
 		  dest: '<%= yeoman.dist %>/images'
 		}]
 	  }
