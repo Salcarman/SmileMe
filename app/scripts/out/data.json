@@ -1,0 +1,253 @@
+{
+    "project": {},
+    "files": {
+        "controllers/about.js": {
+            "name": "controllers/about.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "controllers/formulario.js": {
+            "name": "controllers/formulario.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "controllers/galeria.js": {
+            "name": "controllers/galeria.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "controllers/main.js": {
+            "name": "controllers/main.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app.js": {
+            "name": "app.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "unificados.js": {
+            "name": "unificados.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "classitems": [
+        {
+            "file": "controllers/about.js",
+            "line": 3,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:aboutCtrl",
+            "description": "# aboutCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "controllers/formulario.js",
+            "line": 3,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:formCtrl",
+            "description": "# formCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "controllers/galeria.js",
+            "line": 3,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:galleryCtrl",
+            "description": "# galleryCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "controllers/main.js",
+            "line": 3,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:mainCtrl",
+            "description": "# mainCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "app.js",
+            "line": 3,
+            "ngdoc": "overview",
+            "name": "smileMeApp",
+            "description": "# smileMeApp\n\nMain module of the application.",
+            "class": ""
+        },
+        {
+            "file": "unificados.js",
+            "line": 3,
+            "ngdoc": "overview",
+            "name": "smileMeApp",
+            "description": "# smileMeApp\n\nMain module of the application.",
+            "class": ""
+        },
+        {
+            "file": "unificados.js",
+            "line": 45,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:aboutCtrl",
+            "description": "# aboutCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "unificados.js",
+            "line": 58,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:formCtrl",
+            "description": "# formCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "unificados.js",
+            "line": 91,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:galleryCtrl",
+            "description": "# galleryCtrl\nController of the smileMeApp",
+            "class": ""
+        },
+        {
+            "file": "unificados.js",
+            "line": 104,
+            "ngdoc": "function",
+            "name": "smileMeApp.controller:mainCtrl",
+            "description": "# mainCtrl\nController of the smileMeApp",
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " controllers/about.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " controllers/about.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " controllers/formulario.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " controllers/formulario.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " controllers/galeria.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " controllers/galeria.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " controllers/main.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " controllers/main.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " app.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " app.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " unificados.js:3"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " unificados.js:3"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " unificados.js:45"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " unificados.js:45"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " unificados.js:58"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " unificados.js:58"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " unificados.js:91"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " unificados.js:91"
+        },
+        {
+            "message": "unknown tag: ngdoc",
+            "line": " unificados.js:104"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " unificados.js:104"
+        },
+        {
+            "message": "Missing item type\n# aboutCtrl\nController of the smileMeApp",
+            "line": " controllers/about.js:3"
+        },
+        {
+            "message": "Missing item type\n# formCtrl\nController of the smileMeApp",
+            "line": " controllers/formulario.js:3"
+        },
+        {
+            "message": "Missing item type\n# galleryCtrl\nController of the smileMeApp",
+            "line": " controllers/galeria.js:3"
+        },
+        {
+            "message": "Missing item type\n# mainCtrl\nController of the smileMeApp",
+            "line": " controllers/main.js:3"
+        },
+        {
+            "message": "Missing item type\n# smileMeApp\n\nMain module of the application.",
+            "line": " app.js:3"
+        },
+        {
+            "message": "Missing item type\n# smileMeApp\n\nMain module of the application.",
+            "line": " unificados.js:3"
+        },
+        {
+            "message": "Missing item type\n# aboutCtrl\nController of the smileMeApp",
+            "line": " unificados.js:45"
+        },
+        {
+            "message": "Missing item type\n# formCtrl\nController of the smileMeApp",
+            "line": " unificados.js:58"
+        },
+        {
+            "message": "Missing item type\n# galleryCtrl\nController of the smileMeApp",
+            "line": " unificados.js:91"
+        },
+        {
+            "message": "Missing item type\n# mainCtrl\nController of the smileMeApp",
+            "line": " unificados.js:104"
+        }
+    ]
+}
