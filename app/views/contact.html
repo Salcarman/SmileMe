@@ -1,37 +1,67 @@
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-        <h4 class="text-center">Contacto</h4>
-    </div>
-    <div class="panel-body">
-				<div ng-show="postsent">
-					<div class="panel panel-default">
-						<div class="panel-body text-center">Mensaje enviado correctamente.</div>
-					</div>
-				</div>
-				<div ng-show="!postsent">
-					<form class="col-md-12" name="addingForm" ng-submit="post()">
-							<div class="well">
-									<div class="form-group">
-											*<label for="nombre">Nombre:</label>
-											<input type="text" id="nombre" ng-model="nombre" class="form-control" required>
+<div>
 
-									</div>
-									<div class="form-group">
-											*<label for="email">Email</label>
-											<input type="email" id="email" ng-model="email" class="form-control" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,4}$" required>
-									</div>
-									<div class="form-group">
-											<label for="telefono">Tel&eacute;fono:</label>
-											<input type="text" id="telefono" ng-model="telefono" class="form-control" pattern="^[0-9]{9}$">
-									</div>
-									<div>
-											*<label for="consulta">Ind&iacute;quenos en qu&eacute; podemos ayudarle:</label>
-											<textarea placeholder="Escriba aqu&iacute; su consulta" class="form-control" ng-model="texto" id="consulta" rows="10" cols="40"  required> </textarea>
-									</div>
-									<span class="help-block">Los campos con * son obligatorios.</span>
-									<button type="submit" class="btn btn-primary btn-lock" ng-disabled="addingForm.$invalid">Enviar</button>
-							</div>
-					</form>
+    <div class="page-header">
+        <h1>¿Alguna duda? Elija la forma de contactarnos.</h1>
+    </div>
+    <div class="row">
+       <div class="col-md-4">
+           <div class="panel panel-default">
+           <div class="panel-heading" role="tab">
+                <h4 class="text-center">Llámenos o venga a vernos</h4>
+            </div>
+            <p class="text-justify" style="padding: 15px 15px">
+             <strong>Horario de atención al cliente:</strong> <br>9:00-14:00 y 17:00-20:00 de Lunes a viernes.<br>
+            <br><strong>Teléfono fijo:</strong> 956956956
+            <br>
+            <br><strong>Teléfono móvil:</strong> 650650650
+            <br><br>
+            <strong>Puede localizarnos con Google Maps:</strong>
+           </p>
+           <h3 align=center><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25595.639051667302!2d-6.1229853499999995!3d36.68760565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dc6e84844a39f%3A0x6dac3ef5f3d0ffea!2sJerez+de+la+Frontera%2C+C%C3%A1diz!5e0!3m2!1ses!2ses!4v1423002883915" width="300" height="300" frameborder="0" style="border: 0"></iframe></h3>
+           </div>
+       </div>
+       <div class="col-md-8">
+        <div class="panel panel-default">
+
+            <div class="panel-heading" role="tab">
+                <h4 class="text-center">Mándonos un correo</h4>
+            </div>
+            <div class="panel-body">
+                <div ng-show="postsent">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">Mensaje enviado correctamente.</div>
+                    </div>
+                </div>
+                <div ng-show="!postsent">
+                    <form class="col-md-12" name="addingForm" ng-submit="post()">
+                        <div class="well">
+                            <div class="form-group">
+                                *
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" ng-model="nombre" class="form-control" required>
+
+                            </div>
+                            <div class="form-group">
+                                *
+                                <label for="email">Email</label>
+                                <input type="email" id="email" ng-model="email" class="form-control" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,4}$" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Tel&eacute;fono:</label>
+                                <input type="text" id="telefono" ng-model="telefono" class="form-control" pattern="^[0-9]{9}$">
+                            </div>
+                            <div>
+                                *
+                                <label for="consulta">Ind&iacute;quenos en qu&eacute; podemos ayudarle:</label>
+                                <textarea placeholder="Escriba aqu&iacute; su consulta" class="form-control" ng-model="texto" id="consulta" rows="10" cols="40" required></textarea>
+                            </div>
+                            <span class="help-block">Los campos con * son obligatorios. No podrá enviar su consulta si no indica un email válido.</span>
+                            <button type="submit" class="btn btn-primary btn-lock" ng-disabled="addingForm.$invalid">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>
