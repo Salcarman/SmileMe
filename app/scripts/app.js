@@ -20,7 +20,7 @@ var smileMeApp = angular.module('smileMeApp', [
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/about', {
+      .when('/acerca-de', {
         templateUrl: 'views/about.html',
         controller: 'aboutCtrl'
       })
