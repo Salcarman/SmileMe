@@ -27,6 +27,23 @@ module.exports = function (grunt) {
 	// Project settings
 	yeoman: appConfig,
 
+	protractor: {
+		options: {
+			configFile: "node_modules/protractor/example/conf.js", // Default config file
+			keepAlive: true, // If false, the grunt process stops when the test fails.
+			noColor: false, // If true, protractor will not use colors in its output.
+			args: {
+			// Arguments passed to the command
+			}
+		},
+		target: {   // Grunt requires at least one target to run so you can simply put 'all: {}' here too.
+		 	options: {
+				configFile: "test/conf.js", // Target-specific config file
+				args: {} // Target-specific arguments
+			}
+		},
+	},
+
 	// Less Bootstrap
 	less: {
 		//development
@@ -460,6 +477,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-protractor-runner');
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
 	if (target === 'dist') {
@@ -486,7 +504,8 @@ module.exports = function (grunt) {
 	'concurrent:test',
 	'autoprefixer',
 	'connect:test',
-	'karma'
+	'karma',
+	'protractor'
   ]);
 
   grunt.registerTask('build', [
