@@ -6,7 +6,7 @@
 ![Captura desde iPad](https://photos-3.dropbox.com/t/2/AADOx9-_q2c1xvjioilwHiaJV2eeS6EO6N-TH6wNUXqveA/12/116037006/png/1024x768/3/1423094400/0/2/Chrome2.png/CI6rqjcgASACIAMoASgC/gVZWn16leTN8g8j2Hguyaqxr3b8e74etO70BNX78tWA)
 
 #### Portátil
-![Captura desde Portátil](https://photos-3.dropbox.com/t/2/AADOx9-_q2c1xvjioilwHiaJV2eeS6EO6N-TH6wNUXqveA/12/116037006/png/1024x768/3/1423094400/0/2/Chrome2.png/CI6rqjcgASACIAMoASgC/gVZWn16leTN8g8j2Hguyaqxr3b8e74etO70BNX78tWA)
+![Captura desde Portátil](https://photos-1.dropbox.com/t/2/AABIHklKLktHfLWGc5Ylr0FGNJbpGNSEUxO5KCf9Ai8LwA/12/73332353/png/32x32/3/_/1/2/portatil2.png/CIHt-yIgASACIAMoASgCKAM/8LO1hAUAbeCe7yMsTNrABj1ai4F0haf3wyVKgEsLoT0)
 
 
 
